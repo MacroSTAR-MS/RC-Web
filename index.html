@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuiCraft</title>
+    <link rel="icon" href="./img/icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-white">
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl text-primary" style="font-family: 'Bitcount Prop Single', sans-serif; font-weight: 900;">RuiCraft</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-primary">特色</a>
+                    <a href="#ip" class="text-gray-700 hover:text-primary">服务器IP</a>
+                    <a href="#advantages" class="text-gray-700 hover:text-primary">优势</a>
+                    <a href="#rules" class="text-gray-700 hover:text-primary">规则</a>
+                    <a href="#team" class="text-gray-700 hover:text-primary">团队</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary">常见问题</a>
+                </div>
+                <a href="#ip" class="!rounded-button bg-primary text-white px-6 py-2 whitespace-nowrap">立即加入</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section h-screen flex items-center justify-center text-center text-white"
+        style="background-image: url('./img/banner.png');">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-6xl font-black mb-6">鸿瑞服务器｜RuiCraft</h1>
+            <p class="text-xl font-medium mb-8">洗心革面，从心开始</p>
+            <a href="#features"
+                class="!rounded-button bg-primary text-white px-8 py-3 text-lg whitespace-nowrap">开启新征程</a>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">服务器特点</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-8 rounded-lg shadow-lg">
+                    <img src="./img/bungee.png" class="w-full h-48 object-cover rounded-lg mb-6" alt="特色功能">
+                    <h3 class="text-xl font-bold mb-4">宏星元处理</h3>
+                    <p class="text-gray-600">使用新一代独家自研技术宏星元处理来自动调整服务器性能</p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-lg shadow-lg">
+                    <img src="./img/eg.png" class="w-full h-48 object-cover rounded-lg mb-6" alt="特色功能">
+                    <h3 class="text-xl font-bold mb-4">自建主城</h3>
+                    <p class="text-gray-600">由鸿瑞服务器团队-Baodi_BIEWAI自主建造的主城</p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-lg shadow-lg">
+                    <img src="./img/cozy.png" class="w-full h-48 object-cover rounded-lg mb-6" alt="特色功能">
+                    <h3 class="text-xl font-bold mb-4">体验升值</h3>
+                    <p class="text-gray-600">服务器自带资源包*，完善游戏体验</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ip">
+        <div class="bg-primary/5 px-4 text-center py-20">
+            <h2 class="text-4xl font-bold mb-8">服务器地址</h2>
+            <div class="inline-flex items-center gap-4 bg-white px-8 py-4 rounded-lg shadow-sm">
+                <span id="ip-text" class="text-2xl font-mono">ms.fufumc.top</span>
+                <button id="copy-ip"
+                    class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-primary/90 whitespace-nowrap">
+                    <i class="far fa-copy mr-2"></i>复制
+                </button>
+            </div>
+            <p class="mt-6 text-gray-600">支持 Java 版本 1.20.4</p>
+        </div>
+    </section>
+
+    <section id="advantages" class="py-12 bg-gray-50">
+        <div class="max-w-[1440px] mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">为什么选择RuiCraft?</h2>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-server text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">高性能服务器</h3>
+                    <p class="text-gray-600">使用宏星元处理技术提升服务器性能，确保游戏流畅运行，支持同时在线 25+ 玩家</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">完善的防护系统</h3>
+                    <p class="text-gray-600">高强度的反作弊系统，严格的权限管理，保护每位玩家的游戏体验</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">在线支持</h3>
+                    <p class="text-gray-600">专业的客服团队 —— 鲸云客服团队，随时解答您的问题</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-sync text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">定期更新内容</h3>
+                    <p class="text-gray-600">活动更新游戏内容，举办特别活动，带来全新游戏体验</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="rules" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">服务器规则</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">
+                        <i class="fas fa-gavel text-primary mr-2"></i>
+                        基本守则
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>禁止使用任何形式的外挂程序</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>禁止恶意破坏他人建筑</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>禁止随意辱骂他人</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>禁止发布违规内容（《中华人民共和国治安管理条例》以及《中华人民共和国民法典》中的内容）</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">
+                        <i class="fas fa-handshake text-primary mr-2"></i>
+                        交易规则
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>禁止进行真实货币交易</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>任何的物品交易在服务器内进行</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>禁止未经允许将账号售卖</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>禁止欺诈行为</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">鸿瑞服务器团队</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center relative">
+                    <img src="./img/xh.jpg" class="w-32 h-32 rounded-full mx-auto mb-4" alt="管理员">
+                    <h3 class="text-xl font-bold">夏子涵</h3>
+                    <p class="text-gray-600">首席执行官</p>
+                </div>
+                <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center relative">
+                    <img src="./img/northhurt.jpg" class="w-32 h-32 rounded-full mx-auto mb-4" alt="管理员">
+                    <h3 class="text-xl font-bold">northhurt</h3>
+                    <p class="text-gray-600">服主</p>
+                </div>
+                <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center relative">
+                    <img src="./img/mrxw.jpg" class="w-32 h-32 rounded-full mx-auto mb-4" alt="管理员">
+                    <h3 class="text-xl font-bold">Mrxw</h3>
+                    <p class="text-gray-600">副服主</p>
+                </div>
+                <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center relative">
+                    <img src="./img/baodi.jpg" class="w-32 h-32 rounded-full mx-auto mb-4" alt="管理员">
+                    <h3 class="text-xl font-bold">Baodi_BIEWAI</h3>
+                    <p class="text-gray-600">管理员</p>
+                </div>
+                <div class="team-member bg-white p-6 rounded-lg shadow-lg text-center relative">
+                    <img src="./img/support.jpg" class="w-32 h-32 rounded-full mx-auto mb-4" alt="管理员">
+                    <h3 class="text-xl font-bold">香香软软的早茶</h3>
+                    <p class="text-gray-600">赞助商</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">常见问题</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">如何加入服务器？</h3>
+                    <p class="text-gray-600">复制服务器IP地址，启动 Minecraft ，多人游戏->添加服务器，粘贴服务器地址即可。支持游戏版本 1.20.4</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">服务器是否需要正版？</h3>
+                    <p class="text-gray-600">我们同时支持正版和离线模式登录，但推荐使用正版账号以获得最佳游戏体验</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">遇到问题如何寻求帮助？</h3>
+                    <p class="text-gray-600">你可以在游戏内寻求帮助，或加入我们的官方QQ群：283050704 获取支持</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <span class="text-2xl text-primary" style="font-family: 'Bitcount Prop Single', sans-serif; font-weight: 900;">RuiCraft</span>
+                    <p class="mt-4 text-gray-400">创造属于你的世界</p>
+                    <p class="mt-4 text-gray-400">宏星工作室倾心打造</p>
+                    <p class="mt-4 text-gray-400">*资源包来自 B站UP主：零雾05_Fogg05 的 CozyUI+ 资源包，不含商业用途</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-white">服务器特色</a></li>
+                        <li><a href="#rules" class="text-gray-400 hover:text-white">服务器规则</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white">管理团队</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">加入 or 联系我们</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">QQ群：283050704</li>
+                        <li class="text-gray-400">邮箱：thxq2020@163.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">关注我们</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://qun.qq.com/universal-share/share?ac=1&authKey=2eVH6d3naY1q4MM%2Fsac%2BHixIcmh7luhbpmSbdFbJ0ylKbM8KKAE6OjAf9GMuIGdz&busi_data=eyJncm91cENvZGUiOiIyODMwNTA3MDQiLCJ0b2tlbiI6Inh5QWppQmttOUVqM1VnaXlkYm9ZZHFOd3l3RkZvT09uWE1hUjE3L2hIb21DOVJsdytoRnlwYU1iUmhrWDdSZjkiLCJ1aW4iOiIyNDczNzY4NzcxIn0%3D&data=yTWvyk0oxHyCL3T_qmjbhj4nU7JPAN33YZ8ChjLOVVw5SQ9o2g8kbG_kSWM_QBwbjoOmsSO3vJLZuTnYxkseDQ&svctype=4&tempid=h5_group_info" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-qq text-xl"></i>
+                        </a>
+                        <a href="https://mp.weixin.qq.com/s/5iqAPRiUi_6MEq7K0WagqA" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-weixin text-xl"></i>
+                        </a>
+                        <a href="https://space.bilibili.com/1407673587" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-bilibili text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2021-2025 MacroSTAR Reserve Certain Rights</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
+</html>
